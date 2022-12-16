@@ -16,22 +16,26 @@ export default function SignInPage() {
                 <p>
                     <label>Username or email address</label><br/>
                     
-                    <input type="text" name="first_name" required />
+                    <input type="text" name="first_name"  className="my-text" required />
                    
                 </p>
                 </div>
+                <div className="credentials-pass">
                 <p>
-                    <div className="credentials-pass">
+                    
                     <label>Password</label>
-                    </div>
+                    
                     <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
                     <br/>
-                    <input type="password" name="password" required />
+                    <input type="password" name="password"  className="my-text"required />
                 </p>
+                </div>
+                
+                <div className="btn-submit">
                 <p>
                     <button id="sub_btn" type="submit">Login</button>
                 </p>
-               
+                </div>
             </form>
             <footer>
                 <p>First time? <Link to="/register">Create an account</Link>.</p>

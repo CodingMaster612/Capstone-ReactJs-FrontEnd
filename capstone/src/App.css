@@ -170,3 +170,16 @@ form span {
 .credentials-user p{
   margin: 25px 50px 75px;
 }
+.credentials-pass p{
+  margin: 25px 50px 75px;
+}
+.btn-submit p{
+  margin: 25px 50px 75px;
+
+}
+
+.my-text{
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+}
