@@ -91,10 +91,10 @@ form label {
   padding: 0
 }
 
-.right-label {
+/* .right-label {
   float: right;
   cursor: pointer
-}
+} */
 
 input {
   width: 15rem;
@@ -173,13 +173,23 @@ form span {
 .credentials-pass p{
   margin: 25px 50px 75px;
 }
-.btn-submit p{
+.btn-submit{
   margin: 25px 50px 75px;
-
+ 
 }
 
-.my-text{
+.my-text {
   width: 500px;
   height: 50px;
   border-radius: 25px;
+}
+.btn-text{
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  color: yellow;
+  background-color: rgb(43, 87, 84);
 }
