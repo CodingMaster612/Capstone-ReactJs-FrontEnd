@@ -31,7 +31,7 @@ body {
 /***    Landing Page     ***/
 .main-title,
 .main-para {
-  color: #f1f1f1
+  color: black
 }
 
 .main-title {
@@ -149,4 +149,24 @@ form span {
 /***    Home Page     ***/
 .home-page-title {
   color: #222
+}
+
+.change-text h2 { 
+  font-weight: bold;
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+.credentials-user  {
+  font-weight: bold;
+  font-size: 0vw;
+}
+/* .credentials-pass{
+
+  font-weight: bold;
+  font-size:vw;
+
+} */
+  
+.credentials-user p{
+  margin: 25px 50px 75px;
 }
