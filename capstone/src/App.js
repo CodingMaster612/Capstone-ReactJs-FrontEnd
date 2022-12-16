@@ -11,12 +11,43 @@ function App() {
     setCurrentForm(formName);
   }
 
+  
+
   return (
-    <div className="App">
+    
+   
+  
+        
+
+        <div className="App">
       {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+
+        
+      currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+     
       }
+   <div>
+
+    <Route path="/home" element= {<Login/>} />
+
+
+   </div>
+   
+   
+   
+   
     </div>
+      
+
+   
+    
+    
+    
+    
+    
+    
+
+    
   );
 }
 
