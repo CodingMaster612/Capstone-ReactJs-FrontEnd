@@ -6,6 +6,8 @@ import '../../App.css'
 export default function SignInPage() {
     return (
         <div className="text-center m-5-auto">
+            <div className="wrapper">
+            
             <h2>Sign in to us</h2>
             <form action="/home">
                 <p>
@@ -26,6 +28,7 @@ export default function SignInPage() {
                 <p>First time? <Link to="/register">Create an account</Link>.</p>
                 <p><Link to="/">Back to Homepage</Link>.</p>
             </footer>
+            </div>
         </div>
     )
 }
