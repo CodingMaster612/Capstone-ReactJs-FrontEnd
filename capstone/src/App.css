@@ -232,7 +232,6 @@ body{
 
 .wrapper{
   width: 380px;
-  background: #fff;
   text-align: center;
   border-radius: 5px;
   padding: 40px 30px 30px;
@@ -250,6 +249,25 @@ body{
 form .field{
   margin-bottom: 20px;
   width: 100%;
+  
+}
+form .field .shake{
+ animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake{
+  0%, 100%{
+    margin-left: 0;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  position: relative;
 }
 
 form input{
@@ -315,12 +333,13 @@ form .pass-link{
   text-decoration: underline;
 }
 
-from input[type="submit"]{
+form input[type="submit"]{
   margin-top: 30px;
   border: none;
   color: #fff;
   cursor: #fff;
   background: #5372F0;
+  transition: background 0.2s ease;
   
 
 
