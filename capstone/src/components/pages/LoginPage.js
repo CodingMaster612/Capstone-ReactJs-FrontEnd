@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BackgroundImage from '../../assets/images/white.png'
+import BackgroundImage from '../../assets/images/Chrismas1.png'
 
 import '../../App.css'
 
 export default function SignInPage() {
     return (
         <header style={ HeaderStyle }>
-        <div className="m-5-auto">
+        {/* <div className="m-5-auto"> */}
             <div className="wrapper">
                 <div className="change-text">
                     
@@ -48,7 +48,7 @@ export default function SignInPage() {
                 </div>
             </div>
 
-        </div>
+        {/* </div> */}
         </header>
 
         
