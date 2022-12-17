@@ -6,55 +6,64 @@ import '../../App.css'
 
 export default function SignInPage() {
     return (
-        <header style={ HeaderStyle }>
-        {/* <div className="m-5-auto"> */}
+        <header style={HeaderStyle}>
+
             <div className="wrapper">
-                <div className="change-text">
-                    
-                </div>
-                <form action="/home">
-
-                    <div className="credentials-user">
-                        <p>
-
-                            <div>
-                                <input type="text" name="first_name" className="my-text" placeholder="Enter Your Username or email Address..." required />
-
+                <header>Login Form</header>
+                <form action="#">
+                    <div className="field email">
+                        <div className="input-area">
+                            <input type="text" placeholder="Email Address"></input>
+                                <i className="fas fa-envelope"></i>
+                                <i className="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div className="error-txt"> Email can't be blank</div>
+                        <div className="field password">
+                            <div className="input-area">
+                                <input type="password" placeholder="Password"></input>
+                                    <i className="fas fa-lock"></i>
+                                    <i className="fas fa-exclamation-circle"></i>
                             </div>
-                        </p>
-                    </div>
-                    <div className="credentials-pass">
-                        <p>
-
-                            
-
-                            <Link to="/forget-password"><label className="right-label"></label></Link>
-                            <br />
-                            <input type="password" name="password" className="my-text" placeholder="Enter your password..."required />
-                        </p>
-                    </div>
-
-                    <div className="btn-submit">
-                        <p>
-                            <button type="submit" className="btn-text">Login</button>
-                        </p>
+                            <div className="error-txt">Password cant be blank</div>
+                        </div>
+                        <div className="pass-link"><a href="#">Forgot password</a></div>
                     </div>
                 </form>
-                <div className="account-footer">
-                <footer>
-                    <p>First time? <Link to="/register">Create an account</Link>.</p>
-                    <p><Link to="/">Back to Homepage</Link>.</p>
-                </footer>
                 </div>
-            </div>
+            
 
-        {/* </div> */}
-        </header>
+            </header>
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
     )
 
-    
+
 }
 
 const HeaderStyle = {

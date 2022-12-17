@@ -1,4 +1,4 @@
-/***    General     ***/
+/* **    General     **
 html body {
   height: 100vh;
   width: 100vw;
@@ -39,7 +39,7 @@ body {
   text-transform: capitalize
 }
 
-/***    Landing Page     ***/
+
 .main-title,
 .main-para {
   color: black
@@ -81,7 +81,7 @@ opacity: 1;
 right: 0;
 }
 
-/***    Login Page     ***/
+
 h2 {
   font-weight: 300
 }
@@ -107,7 +107,7 @@ form label {
   cursor: pointer
 } */
 
-input {
+/* input {
   width: 15rem;
   padding: .3rem;
   border-radius: 5px;
@@ -135,7 +135,6 @@ footer p {
   font-size: .9rem
 }
 
-/***    Register Page     ***/
 #checkbox {
   width: 1rem
 }
@@ -158,7 +157,6 @@ form span {
   float: left
 }
 
-/***    Home Page     ***/
 .home-page-title {
   color: #222
 }
@@ -179,7 +177,7 @@ form span {
 
 } */
   
-.credentials-user p{
+/* .credentials-user p{
   margin: 25px 50px 75px;
 }
 .credentials-pass{
@@ -214,4 +212,6 @@ form span {
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
-}
+}  */ 
+
+
