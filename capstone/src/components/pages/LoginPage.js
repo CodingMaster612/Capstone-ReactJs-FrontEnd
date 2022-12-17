@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BackgroundImage from '../../assets/images/Chrismas1.png'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCoffee} from "@fortawesome/free-solid-svg-icons"
 import '../../App.css'
 
 export default function SignInPage() {
@@ -14,8 +15,10 @@ export default function SignInPage() {
                     <div className="field email">
                         <div className="input-area">
                             <input type="text" placeholder="Email Address"></input>
-                                <i className="fas fa-envelope"></i>
-                                <i className="fas fa-exclamation-circle"></i>
+                                
+                                <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
+                               
+                                
                         </div>
                         <div className="error-txt"> Email can't be blank</div>
                         <div className="field password">
@@ -27,8 +30,11 @@ export default function SignInPage() {
                             <div className="error-txt">Password cant be blank</div>
                         </div>
                         <div className="pass-link"><a href="#">Forgot password</a></div>
+                        <input type="submit" value="Login"></input>
                     </div>
+
                 </form>
+                <div className="signup-link"> Not yet a Member?<a href="#">Sign up now</a></div>
                 </div>
             
 
