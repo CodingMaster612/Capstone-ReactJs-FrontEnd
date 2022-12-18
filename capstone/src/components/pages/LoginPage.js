@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faFacebook,  faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import '../../App.css'
 
 export default function SignInPage() {
@@ -11,7 +13,14 @@ export default function SignInPage() {
                 <p>
                     <label>Username or email address</label><br/>
                     <input type="text" name="first_name" required />
-                </p>
+                    <a href="https://www.facebook.com">
+                        <FontAwesomeIcon icon={faFacebook} />
+                        </a>
+                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faTwitter} />
+
+                    
+                    </p>
                 <p>
                     <label>Password</label>
                     <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
