@@ -15,21 +15,28 @@ export default function SignInPage() {
         
             <img src={PillowImage} alt="pillow"></img>
             
-            <h2>Welcome to Currency Converter</h2>
+            <h2>Welcome To Pillow</h2>
             <form action="/login">
                 <p>
-                    <label>Username or email address</label><br />
-                    <input type="text" name="first_name" required />
-
+                   <div className="user-container">
+                    <input type="text" name="first_name" required  placeholder=" Email..."/>
+                    </div>
                 </p>
                 <p>
-                    <label>Password</label>
-                    <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
-                    <br />
-                    <input type="password" name="password" required />
+                    
+                    <div className="pass-container">
+                    <input type="password" name="password"  placeholder="Password..."required />
+                    </div>
+                    <div>
+                    <Link to="/forget-password"><label className="right-label">Forget  your password?</label></Link>
+                    </div>
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Login</button>
+                    
+                    
+                    
+                    
                     <a href="https://www.facebook.com">
                         <FontAwesomeIcon icon={faFacebook}  className="icon-container"/>
                     </a>

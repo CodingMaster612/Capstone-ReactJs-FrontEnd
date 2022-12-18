@@ -9,6 +9,11 @@
 }
 .wrapper h2{
   font-weight: bold;
+  position: relative;
+  left: 20px;
+  top: 2px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .wrapper img{
@@ -105,10 +110,11 @@ h2 {
 form {
   display: inline-block;
   background: #f3f3f3;
-  border: 1px solid #ddd;
-  border-radius: 2px;
+  /* border: 1px solid black; */
+  border-radius: 25px;
   padding: 2rem;
-  margin: 2rem 0 1rem 0
+  margin: 2rem 0 1rem 0;
+  height: 600px;
 }
 
 form label {
@@ -120,7 +126,11 @@ form label {
 
 .right-label {
   float: right;
-  cursor: pointer
+  cursor: pointer;
+  left: -150px;
+  position: relative;
+ 
+  top: 375px;
 }
 
 input {
@@ -136,9 +146,12 @@ input {
   width: 100%;
   padding: .3rem;
   border: none;
-  background: #222;
+  background: red;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 25px;
+  position: relative;
+  left: -5px;
+  top: 375px;
 }
 
 #sub_btn:hover {
@@ -172,4 +185,27 @@ form span {
 .icon-container {
   width: 100px;
   height: 100px;
+  position: relative;
+  left: -5px;
+  top: 375px;
+  
+}
+
+.user-container {
+  position: relative;
+  left: -5px;
+  top: 375px;
+}
+
+
+.user-container input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.pass-container{
+  position: relative;
+  left: -5px;
+  top: 375px;
 }
