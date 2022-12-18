@@ -16,6 +16,7 @@ export default function SignInPage() {
             <img src={PillowImage} alt="pillow"></img>
             
             <h2>Welcome To Pillow</h2>
+            
             <form action="/login">
                 <p>
                    <div className="user-container">
