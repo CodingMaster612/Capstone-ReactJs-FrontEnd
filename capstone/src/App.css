@@ -7,9 +7,21 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
+.wrapper h2{
+  font-weight: bold;
+}
 
-
-
+.wrapper img{
+  border-radius: 500px;
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+    object-position: center top;
+    position: relative;
+    left: 130px;
+    top: 2px;
+}
 
 
 

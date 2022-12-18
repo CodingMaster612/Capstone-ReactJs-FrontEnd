@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BackgroundImage from '../../assets/images/x.png'
-
+import BackgroundImage from '../../assets/images/white.png'
+import PillowImage from '../../assets/images/pillowLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import '../../App.css'
@@ -11,7 +11,11 @@ export default function SignInPage() {
         <header style={ HeaderStyle }>
        
        <div className="wrapper">
-            <h2>Sign in to us</h2>
+            
+        
+            <img src={PillowImage} alt="pillow"></img>
+            
+            <h2>Welcome to Currency Converter</h2>
             <form action="/login">
                 <p>
                     <label>Username or email address</label><br />
