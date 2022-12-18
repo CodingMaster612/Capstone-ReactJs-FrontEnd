@@ -28,7 +28,7 @@ export default function SignInPage() {
                     <input type="password" name="password"  placeholder="Password..."required />
                     </div>
                     <div>
-                    <Link to="/forget-password"><label className="right-label">Forget  your password?</label></Link>
+                    <Link to="/forget-password"><label className="right-label">Forgot your password?</label></Link>
                     </div>
                 </p>
                 <p>
