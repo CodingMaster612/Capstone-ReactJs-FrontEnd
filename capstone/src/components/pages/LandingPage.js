@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
-import BackgroundImage from '../../assets/images/pin.png'
+import BackgroundImage from '../../assets/images/blue.png'
 
 export default function LandingPage() {
     return (

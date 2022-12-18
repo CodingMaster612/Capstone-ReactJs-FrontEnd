@@ -11,6 +11,18 @@ export default function SignUpPage() {
     return (
 
          <header style={ HeaderStyle }>
+        
+        <div className="searchbar-header">
+                <div className="topnav">
+
+                    <a class="active" href="/home">Home</a>
+                    
+                   
+                    {/* <input type="search" id="search" placeholder="Search" /> */}
+                </div>
+        
+        
+        </div>
         <div className="wrapper">
             
             <img src={PillowImage} alt="pillow"></img>
@@ -52,9 +64,7 @@ export default function SignUpPage() {
                         <FontAwesomeIcon icon={faTwitter} className="icon-container"/> 
                     </a>
             </form>
-            <footer>
-                <p><Link to="/">Back to Homepage</Link>.</p>
-            </footer>
+            
         </div>
         </header>
     )

@@ -14,8 +14,8 @@ export default function SignInPage() {
                 <div className="topnav">
 
                     <a class="active" href="/home">Home</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
+                    <a href="/register">Sign Up</a>
+                   
                     {/* <input type="search" id="search" placeholder="Search" /> */}
                 </div>
 
@@ -64,7 +64,7 @@ export default function SignInPage() {
                 </form>
                 <footer>
                     <p>First time? <Link to="/register">Create an account</Link>.</p>
-                    <p><Link to="/">Back to Homepage</Link>.</p>
+                    
                 </footer>
             </div>
         </header>
