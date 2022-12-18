@@ -7,17 +7,18 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.wrapper h2{
-  font-weight: bold;
+/* .wrapper h2{
+  
   position: relative;
-  left: 20px;
-  top: 2px;
-  font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
-}
+  
+  
+  
+    left: 90px;
+    top: 90px;
+} */
 
 .wrapper img{
-  border-radius: 500px;
+     border-radius: 500px;
     height: auto; 
     width: auto; 
     max-width: 100px; 
@@ -25,7 +26,7 @@
     object-position: center top;
     position: relative;
     left: 130px;
-    top: 2px;
+    top: 200px;
 }
 
 
@@ -110,7 +111,7 @@ h2 {
 form {
   display: inline-block;
   background: #f3f3f3;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border-radius: 25px;
   padding: 2rem;
   margin: 2rem 0 1rem 0;
@@ -130,7 +131,7 @@ form label {
   left: -150px;
   position: relative;
  
-  top: 375px;
+  top: 200px;
 }
 
 input {
@@ -146,12 +147,12 @@ input {
   width: 100%;
   padding: .3rem;
   border: none;
-  background: red;
+  background: pink;
   color: #fff;
   border-radius: 25px;
   position: relative;
   left: -5px;
-  top: 375px;
+  top: 200px;
 }
 
 #sub_btn:hover {
@@ -187,14 +188,14 @@ form span {
   height: 100px;
   position: relative;
   left: -5px;
-  top: 375px;
+  top: 200px;
   
 }
 
 .user-container {
   position: relative;
   left: -5px;
-  top: 375px;
+  top: 185px;
 }
 
 
@@ -207,5 +208,12 @@ form span {
 .pass-container{
   position: relative;
   left: -5px;
-  top: 375px;
+  top: 200px;
+}
+
+.pass-container input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

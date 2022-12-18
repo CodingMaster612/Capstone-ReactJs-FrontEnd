@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BackgroundImage from '../../assets/images/white.png'
+import BackgroundImage from '../../assets/images/pink.png'
 import PillowImage from '../../assets/images/pillowLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -37,13 +37,13 @@ export default function SignInPage() {
                     
                     
                     
-                    <a href="https://www.facebook.com">
+                    <a>
                         <FontAwesomeIcon icon={faFacebook}  className="icon-container"/>
                     </a>
-                    <a href="https://www.instagram.com">
+                    <a>
                         <FontAwesomeIcon icon={faInstagram}className="icon-container"/> 
                     </a>
-                    <a href="https:/www.twitter.com">
+                    <a>
                         <FontAwesomeIcon icon={faTwitter} className="icon-container"/> 
                     </a>
                 </p>
