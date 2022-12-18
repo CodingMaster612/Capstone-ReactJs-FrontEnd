@@ -1,56 +1,42 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BackgroundImage from '../../assets/images/white.png'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCoffee} from "@fortawesome/free-solid-svg-icons"
 import '../../App.css'
 
 export default function SignUpPage() {
 
     return (
-        // <div className="m-5-auto">
-        <header style={ HeaderStyle }>
+        <header style={HeaderStyle}>
+
             <div className="wrapper">
-                
-                <form action="/home">
-
-                    <div className="credentials-user">
-                        <p>
-                           
-                            <input type="text" name="first_name"  className="my-text" placeholder="Enter your username..." required />
-                        </p>
-
-
-
-                        <p>
-                           
-                            <input type="email" name="email" className="my-text" placeholder=" Enter your email Address..."required />
-                        </p>
-
+                <header>Login Form</header>
+                <form action="/login">
+                    <div className="field email">
+                        <div className="input-area">
+                            <input type="text" placeholder="Email Address"></input>
+                            <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
                     </div>
-                    <div className="credentials-pass">
-                        <p>
-                            
-                            <input type="password" name="password" className="my-text"  placeholder="Enter your password..."required />
-                        </p>
+                        <div className=" error error-txt"> Email can't be blank</div>
+                        <div className="field password">
+                            <div className="input-area">
+                                <input type="password" placeholder="Password"></input>
+                                    
+                            </div>
+                            <div className=" error error-txt">Password cant be blank</div>
+                        </div>
+                        <div className="pass-link"><a href="#">Forgot password</a></div>
+                        <input type="submit" value="Login"></input>
+                    </div>
 
-                    </div>
-                    {/* <p>
-                        <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
-                    </p> */}
-                    <div className="btn-submit">
-                    <p>
-                        <button  type="submit" className="btn-text">Register</button>
-                    </p>
-                    </div>
                 </form>
-                <div className="account-footer">
-                {/* <footer>
-                    <p><Link to="/">Homepage</Link></p>
-                </footer> */}
+                <div className="signup-link"> Not yet a Member?<a href="#">Sign up now</a></div>
                 </div>
-            {/* </div> */}
-        </div>
-        </header> 
+            
+            
+            
+            </header>
     )
 
 }

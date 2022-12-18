@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import BackgroundImage from '../../assets/images/x.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {faCoffee} from "@fortawesome/free-solid-svg-icons"
+import {faCoffee} from "@fortawesome/free-solid-svg-icons"
 import '../../App.css'
 
 export default function SignInPage() {
@@ -11,25 +11,21 @@ export default function SignInPage() {
 
             <div className="wrapper">
                 <header>Login Form</header>
-                <form action="#">
+                <form action="/login">
                     <div className="field email">
                         <div className="input-area">
                             <input type="text" placeholder="Email Address"></input>
-                                <i className="fa fa-envelope"></i>
-                                <i className="error error-icon fas fa-exclamation-circle"></i>
-
-                                {/* <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon> */}
                                
-                                
+
+                                <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
                         </div>
-                        <div className="error-txt"> Email can't be blank</div>
+                        <div className=" error error-txt"> Email can't be blank</div>
                         <div className="field password">
                             <div className="input-area">
                                 <input type="password" placeholder="Password"></input>
-                                    <i className="fas fa-lock"></i>
-                                    <i className="fas fa-exclamation-circle"></i>
+                                    
                             </div>
-                            <div className="error-txt">Password cant be blank</div>
+                            <div className=" error error-txt">Password cant be blank</div>
                         </div>
                         <div className="pass-link"><a href="#">Forgot password</a></div>
                         <input type="submit" value="Login"></input>
@@ -39,7 +35,8 @@ export default function SignInPage() {
                 <div className="signup-link"> Not yet a Member?<a href="#">Sign up now</a></div>
                 </div>
             
-
+            
+            
             </header>
 
 
@@ -76,9 +73,11 @@ export default function SignInPage() {
 
 const HeaderStyle = {
     width: "100%",
-    height: "100vh",
+    height: "60vh",
     background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+    backgroundSize: "cover",
+    borderRadius: 25,
+    
 }

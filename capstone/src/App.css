@@ -214,7 +214,7 @@ form span {
   font-style: italic;
 }  */ 
 
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 *{
 
   margin:0;
