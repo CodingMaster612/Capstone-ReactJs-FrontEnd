@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import BackgroundImage from '../../assets/images/pink.png'
 import PillowImage from '../../assets/images/pillowLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

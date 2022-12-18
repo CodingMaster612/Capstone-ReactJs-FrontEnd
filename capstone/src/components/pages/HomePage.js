@@ -1,5 +1,8 @@
-import { React, useState } from "react";
+import { React} from "react";
 import TextField from "@mui/material/TextField";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch} from "@fortawesome/free-solid-svg-icons";
+
 
 import '../../App.css'
 
@@ -15,6 +18,8 @@ export default function HomePage() {
                 <div className="topnav">
 
                     <a class="active" href="/home">Place holder</a>
+                    <a  href="/home">Place Holder</a>
+                    
 
 
                 </div>
@@ -23,8 +28,13 @@ export default function HomePage() {
             </div>
 
             <div className="main">
-
+            <div className="icon">
+                
+                <FontAwesomeIcon icon={faSearch} />
+                </div>
                 <div className="search">
+                
+                    
                     <TextField
                         id="outlined-basic"
 
