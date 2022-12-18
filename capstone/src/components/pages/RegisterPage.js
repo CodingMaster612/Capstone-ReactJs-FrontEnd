@@ -1,51 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BackgroundImage from '../../assets/images/white.png'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCoffee} from "@fortawesome/free-solid-svg-icons"
+
 import '../../App.css'
 
 export default function SignUpPage() {
 
     return (
-        <header style={HeaderStyle}>
-
-            <div className="wrapper">
-                <header>Login Form</header>
-                <form action="/login">
-                    <div className="field email">
-                        <div className="input-area">
-                            <input type="text" placeholder="Email Address"></input>
-                            <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
-                    </div>
-                        <div className=" error error-txt"> Email can't be blank</div>
-                        <div className="field password">
-                            <div className="input-area">
-                                <input type="password" placeholder="Password"></input>
-                                    
-                            </div>
-                            <div className=" error error-txt">Password cant be blank</div>
-                        </div>
-                        <div className="pass-link"><a href="#">Forgot password</a></div>
-                        <input type="submit" value="Login"></input>
-                    </div>
-
-                </form>
-                <div className="signup-link"> Not yet a Member?<a href="#">Sign up now</a></div>
-                </div>
-            
-            
-            
-            </header>
+        <div className="text-center m-5-auto">
+            <h2>Join us</h2>
+            <h5>Create your personal account</h5>
+            <form action="/home">
+                <p>
+                    <label>Username</label><br/>
+                    <input type="text" name="first_name" required />
+                </p>
+                <p>
+                    <label>Email address</label><br/>
+                    <input type="email" name="email" required />
+                </p>
+                <p>
+                    <label>Password</label><br/>
+                    <input type="password" name="password" requiredc />
+                </p>
+                <p>
+                    <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
+                </p>
+                <p>
+                    <button id="sub_btn" type="submit">Register</button>
+                </p>
+            </form>
+            <footer>
+                <p><Link to="/">Back to Homepage</Link>.</p>
+            </footer>
+        </div>
     )
 
-}
-
-const HeaderStyle = {
-    width: "100%",
-    height: "100vh",
-    background: `url(${BackgroundImage})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
 }
