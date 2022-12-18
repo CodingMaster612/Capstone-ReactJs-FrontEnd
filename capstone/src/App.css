@@ -1,4 +1,19 @@
 /***    General     ***/
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +25,9 @@ body {
   margin: 0 auto
 }
 
-.m-5-auto {
+/* .m-5-auto {
   margin: 5rem auto
-}
+} */
 
 .primary-button {
   margin-top: 5rem;
@@ -140,4 +155,9 @@ form span {
 /***    Home Page     ***/
 .home-page-title {
   color: #222
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
 }
