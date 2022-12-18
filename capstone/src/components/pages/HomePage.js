@@ -1,13 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { React, useState } from "react";
+import TextField from "@mui/material/TextField";
+
+import '../../App.css'
+
+import BackgroundImage from '../../assets/images/pink2.png'
 
 export default function HomePage() {
+
+
     return (
-        <div className="text-center">
-            <h1 className="main-title home-page-title">welcome to our app</h1>
-            <Link to="/">
-                <button className="primary-button">Log out</button>
-            </Link>
-        </div>
+
+        <header style={HeaderStyle}>
+            <div className="searchbar-header">
+                <div className="topnav">
+
+                    <a class="active" href="/home">Place holder</a>
+
+
+                </div>
+
+
+            </div>
+
+            <div className="main">
+
+                <div className="search">
+                    <TextField
+                        id="outlined-basic"
+
+                        variant="outlined"
+                        fullWidth
+                        label="Search"
+                    />
+                </div>
+
+            </div>
+
+        </header>
+
     )
 }
+const HeaderStyle = {
+    width: "100%",
+    height: "100vh",
+    background: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+}
+
