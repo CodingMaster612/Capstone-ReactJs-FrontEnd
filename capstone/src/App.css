@@ -338,9 +338,31 @@ input[type="search"]::placeholder {
 }
 
 .icon-home{
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   left:-20px; 
-  top: 20px;
+  top: 27px;
+  text-align: right;
+}
+.icon-profile{
+  font-size: 20px;
+  position: relative;
+  left:-55px; 
+  top: 5px;
+  text-align: right;
+}
+
+.icon-bar{
+  font-size: 20px;
+  position: relative;
+  left:-90px; 
+  top: -17px;
+  text-align: right;
+}
+.icon-wallet{
+  font-size: 20px;
+  position: relative;
+  left:-120px; 
+  top: -40px;
   text-align: right;
 }
