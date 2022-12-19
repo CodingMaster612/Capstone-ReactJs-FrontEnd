@@ -332,8 +332,15 @@ input[type="search"]::placeholder {
 .icon{
   font-size: 30px;
   position: relative;
-  left:370px; 
+  left:320px; 
   top: 70px;
 
 }
 
+.icon-home{
+  font-size: 15px;
+  position: relative;
+  left:-20px; 
+  top: 20px;
+  text-align: right;
+}
