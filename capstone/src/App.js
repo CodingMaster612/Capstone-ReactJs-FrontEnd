@@ -16,11 +16,11 @@ export default function App() {
        
             
                 <Routes>
-                    <Route exact path="/" element={< LandingPage/> } />
+                    <Route exact path="/home" element={< LandingPage/> } />
                     <Route path="/login" element={ <LoginPage/> } />
                     <Route path="/register" element={< RegisterPage/> } />
                     <Route path="/forget-password" element={ <ForgetPasswordPage/> } />
-                    <Route path="/home" element={ <HomePage/> } />
+                    <Route path="/" element={ <HomePage/> } />
                 </Routes>
                 
             
