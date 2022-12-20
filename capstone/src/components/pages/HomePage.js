@@ -1,16 +1,33 @@
-import { React } from "react";
+// import { React } from "react";
+import React, { useState } from "react";
+
 import { Link } from 'react-router-dom'
 
 import TextField from "@mui/material/TextField";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHouse , faUser, faBars , faWallet} from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faHouse, faUser, faBars, faWallet } from "@fortawesome/free-solid-svg-icons";
 import '../../App.css'
 import BackgroundImage from '../../assets/images/pink2.png'
+import PillowImage from '../../assets/images/pillowLogo.png'
 export default function HomePage() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    return (
       <header style={HeaderStyle}>
          <div className="searchbar-header">
-            
+
             <Link to="/home">
                <div className="icon-home">
                   <FontAwesomeIcon icon={faHouse} />
@@ -38,22 +55,30 @@ export default function HomePage() {
                   </div>
                </Link>
             </div>
-            
+
          </div>
          <div className="main">
             <div className="icon">
                <FontAwesomeIcon icon={faSearch} />
             </div>
             <div className="search">
-               {/* add search filter here as an input tag */}
-               <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  fullWidth
-                  label="Search"
-               />
+
+               <TextField id="outlined-basic" variant="outlined" fullWidth label="Search" />
+
             </div>
-         </div>
+            
+            <div className="box">
+                
+                  <img src={PillowImage} />
+                  
+               
+                  
+                 
+              </div>
+            </div>
+
+        
+
       </header>
    )
 }
