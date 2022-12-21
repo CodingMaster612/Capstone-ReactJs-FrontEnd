@@ -51,13 +51,13 @@ export default function SignInPage() {
 
 
 
-                        <a>
+                        <a href="www.google.com">
                             <FontAwesomeIcon icon={faFacebook} className="icon-container" />
                         </a>
-                        <a>
+                        <a href="www.facebook.com">
                             <FontAwesomeIcon icon={faInstagram} className="icon-container" />
                         </a>
-                        <a>
+                        <a href="www.facebook.com">
                             <FontAwesomeIcon icon={faTwitter} className="icon-container" />
                         </a>
                     </p>

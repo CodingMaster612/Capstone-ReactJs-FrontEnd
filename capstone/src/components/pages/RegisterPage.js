@@ -53,13 +53,13 @@ export default function SignUpPage() {
                 <p>
                     <button id="sub_btn" type="submit">Register</button>
                 </p>
-                <a>
+                <a href="www.facebook.com">
                         <FontAwesomeIcon icon={faFacebook}  className="icon-container"/>
                     </a>
-                    <a>
+                    <a href="www.instagram.com">
                         <FontAwesomeIcon icon={faInstagram}className="icon-container"/> 
                     </a>
-                    <a>
+                    <a href="www.linkedin.com">
                         <FontAwesomeIcon icon={faTwitter} className="icon-container"/> 
                     </a>
             </form>

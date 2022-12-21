@@ -1,14 +1,12 @@
 // import { React } from "react";
-import React, { useState } from "react";
+import React from "react";
 
 import { Link } from 'react-router-dom'
-
 import TextField from "@mui/material/TextField";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHouse, faUser, faBars, faWallet } from "@fortawesome/free-solid-svg-icons";
 import '../../App.css'
 import BackgroundImage from '../../assets/images/pink2.png'
-import PillowImage from '../../assets/images/pillowLogo.png'
 export default function HomePage() {
 
 
@@ -61,25 +59,46 @@ export default function HomePage() {
             <div className="icon">
                <FontAwesomeIcon icon={faSearch} />
             </div>
+
+
             <div className="search">
 
                <TextField id="outlined-basic" variant="outlined" fullWidth label="Search" />
 
             </div>
-            
-            <div className="box">
-                
-                  <img src={PillowImage} />
-                  
-               
-                  
-                 
-              </div>
-            </div>
+            <Link to="/login">
+                  <div className="icon-login">
+                     <FontAwesomeIcon icon={faWallet} />
+                  </div>
+               </Link>
+               <Link to="/register">
+                  <div className="icon-register">
+                     <FontAwesomeIcon icon={faWallet} />
+                  </div>
+               </Link>
+               <Link to="/logout">
+                  <div className="icon-logout">
+                     <FontAwesomeIcon icon={faWallet} />
+                  </div>
+               </Link>
 
-        
+         <div>
 
-      </header>
+
+         </div>
+
+         <div className="box">
+
+         </div>
+
+
+
+
+      </div>
+
+
+
+      </header >
    )
 }
 const HeaderStyle = {
