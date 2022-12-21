@@ -440,3 +440,21 @@ section{
   color: #044463;
 }
 
+.icon-download{
+  font-size: 40px;
+  position: relative;
+  left:-670px; 
+  top: 345px;
+  text-align: left;
+}
+.icon-chart{
+  font-size: 40px;
+  position: relative;
+  left: -600px; 
+  top: 410px;
+  text-align: center;
+}
+.icon-bitcoin{
+  font-size: 50px;
+  
+}

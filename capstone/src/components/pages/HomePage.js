@@ -4,9 +4,10 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import TextField from "@mui/material/TextField";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHouse, faUser, faBars, faWallet } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faHouse, faUser, faBars, faWallet, faChartSimple, faDownload } from "@fortawesome/free-solid-svg-icons";
 import '../../App.css'
 import BackgroundImage from '../../assets/images/pink2.png'
+import { faBitcoin } from "@fortawesome/free-brands-svg-icons";
 export default function HomePage() {
 
 
@@ -66,19 +67,19 @@ export default function HomePage() {
                <TextField id="outlined-basic" variant="outlined" fullWidth label="Search" />
 
             </div>
-            <Link to="/login">
-                  <div className="icon-login">
-                     <FontAwesomeIcon icon={faWallet} />
+            <Link to="/chart">
+                  <div className="icon-bitcoin">
+                     <FontAwesomeIcon icon={faBitcoin} />
                   </div>
                </Link>
-               <Link to="/register">
-                  <div className="icon-register">
-                     <FontAwesomeIcon icon={faWallet} />
+               <Link to="/currency">
+                  <div className="icon-chart">
+                     <FontAwesomeIcon icon={faChartSimple} />
                   </div>
                </Link>
-               <Link to="/logout">
-                  <div className="icon-logout">
-                     <FontAwesomeIcon icon={faWallet} />
+               <Link to="/download">
+                  <div className="icon-download">
+                     <FontAwesomeIcon icon={faDownload} />
                   </div>
                </Link>
 
